@@ -1,4 +1,10 @@
-<script setup>
+<script lang="ts">
+definePageMeta({
+  layout: 'custom',
+});
+</script>
+
+<script setup lang="ts">
 const pageName = 'hello-page';
 </script>
 

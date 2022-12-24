@@ -1,6 +1,6 @@
 <template>
-<div class="default-layout">
-  <div>default-layout</div>
+<div class="custom-layout">
+  <div>custom-layout</div>
   <ul>
     <li
       v-for="(item, index) in [
