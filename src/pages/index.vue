@@ -1,6 +1,8 @@
 <script lang="ts">
+
 import Org01 from '../manual-components/index/org/Org01.vue'
 import Org02 from '../manual-components/index/org/Org02.vue'
+
 export default defineComponent({
   components: {
     Org01,
@@ -10,6 +12,11 @@ export default defineComponent({
 </script>
 
 <script setup lang="ts">
+import { createHogeStore, useHogeStore } from '../stores/HogeStore';
+createHogeStore();
+const hogeStore = useHogeStore();
+await hogeStore.actions.reloadList();
+
 const pageName = 'index-page';
 </script>
 
